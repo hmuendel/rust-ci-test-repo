@@ -1,0 +1,6 @@
+[workspace]
+members = ["rust-ci-test-repo", "some-lib", "another-lib"]
+
+
+[profile.ship]
+inherits = "release"
