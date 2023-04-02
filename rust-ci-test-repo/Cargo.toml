@@ -1,0 +1,16 @@
+[package]
+name = "rust-ci-test-repo"
+version = "0.5.2"
+edition = "2021"
+rust-version = "1.65.0"
+license = "GPL-3.0-or-later"
+homepage = "https://github.com/hmuendel/rust-ci-test-repo"
+repository = "https://github.com/hmuendel/rust-ci-test-repo"
+description = "Testing our ci"
+
+[dev-dependencies]
+iai = "0.1.1"
+
+[[bench]]
+name = "iai"
+harness = false
