@@ -4,7 +4,7 @@ version = 3
 
 [[package]]
 name = "another-lib"
-version = "0.2.0"
+version = "0.3.0"
 
 [[package]]
 name = "cc"
@@ -152,7 +152,7 @@ checksum = "f162c6dd7b008981e4d40210aca20b4bd0f9b60ca9271061b07f78537722f2e1"
 
 [[package]]
 name = "rust-ci-test-repo"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
  "iai",
 ]
@@ -186,7 +186,7 @@ checksum = "a507befe795404456341dfab10cef66ead4c041f62b8b11bbb92bffe5d0953e0"
 
 [[package]]
 name = "some-lib"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
  "loom",
 ]

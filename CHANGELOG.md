@@ -1,6 +1,18 @@
 # Changelog
 
-## v0.2.0 2023-04-03
+## v0.3.0 2023-04-03
+
+### Features
+
+- Have a license file
+
+
+### Fixes
+
+- Upload assets starts in parallel with create release
+
+
+## v0.2.0 - 2023-04-03
 
 ### Fixes
 
