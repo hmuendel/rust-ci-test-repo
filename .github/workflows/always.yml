@@ -259,12 +259,13 @@ jobs:
           LSAN_OPTIONS: "suppressions=lsan-suppressions.txt"
           RUSTFLAGS: "-Z sanitizer=memory"
 
+        # https://github.com/japaric/rust-san#threadsanitizer-data-race-in-the-test-runner
       - name: cargo test -Zsanitizer=thread
         run: cargo test --all-features --target x86_64-unknown-linux-gnu
         env:
           LSAN_OPTIONS: "suppressions=lsan-suppressions.txt"
           RUSTFLAGS: "-Z sanitizer=thread"
-          RUST_TEST_THREADS: 1
+          RUST_TEST_THREADS: "1"
 
   miri:
     runs-on: ubuntu-latest
