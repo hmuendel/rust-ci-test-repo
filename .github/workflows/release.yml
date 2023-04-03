@@ -74,6 +74,7 @@ jobs:
           additional-denied-words: 'nope,cancel,stop'
 
   upload-assets:
+    needs: [create-release]
     strategy:
       matrix:
         os:
@@ -150,7 +151,7 @@ jobs:
 
   publish-release:
     # Only run after all the other tasks, but it's ok if upload-artifacts was skipped
-    needs: [approve-release, create-release, upload-assets]
+    needs: [approve-release, upload-assets]
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
