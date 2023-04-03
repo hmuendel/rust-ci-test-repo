@@ -1,6 +1,13 @@
 # Changelog
 
-## v0.1.0 2023-04-03
+## v0.2.0 2023-04-03
+
+### Fixes
+
+- Releas ci don't trigger
+
+
+## v0.1.0 - 2023-04-03
 
 ### Features
 
